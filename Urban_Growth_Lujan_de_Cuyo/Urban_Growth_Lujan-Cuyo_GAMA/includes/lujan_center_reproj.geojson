@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "playa_lujan_reproj",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32719" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Plaza Lujan" }, "geometry": { "type": "Point", "coordinates": [ 511232.322230851976201, 6344357.421225899830461 ] } }
+]
+}

@@ -1,0 +1,277 @@
+!SESSION 2023-02-05 14:20:48.154 -----------------------------------------------
+eclipse.buildId=${build.id}
+java.version=17.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  D:\Documentos\ERASMUS CMDE\PLUS\WS 22\Spatial Simulation\Proyecto Final\GAMA Model\proyecto_final_mya_urban_growth\models\Lujan_urban_growthV4_para_raster.gaml
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault D:\Documentos\ERASMUS CMDE\PLUS\WS 22\Spatial Simulation\Proyecto Final\GAMA Model\proyecto_final_mya_urban_growth\models\Lujan_urban_growthV4_para_raster.gaml
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-02-05 14:21:03.706
+!MESSAGE An internal error occurred during: "Refreshing the GAMA Workspace".
+!STACK 0
+com.google.common.util.concurrent.UncheckedExecutionException: com.google.common.util.concurrent.UncheckedExecutionException: com.google.common.util.concurrent.UncheckedExecutionException: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.findContentTypeFor(String)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2051)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3951)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4848)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.wrap(ResourceManager.java:734)
+	at ummisco.gama.ui.navigator.contents.TopLevelFolder.lambda$1(TopLevelFolder.java:98)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at one.util.streamex.StreamEx.toArray(StreamEx.java:840)
+	at ummisco.gama.ui.navigator.contents.TopLevelFolder.initializeChildren(TopLevelFolder.java:98)
+	at ummisco.gama.ui.navigator.contents.TopLevelFolder.<init>(TopLevelFolder.java:90)
+	at ummisco.gama.ui.navigator.contents.ModelsLibraryFolder.<init>(ModelsLibraryFolder.java:28)
+	at ummisco.gama.ui.navigator.contents.NavigatorRoot.getLibraryFolder(NavigatorRoot.java:95)
+	at ummisco.gama.ui.navigator.contents.NavigatorRoot.getFolders(NavigatorRoot.java:139)
+	at ummisco.gama.ui.navigator.contents.NavigatorRoot.recreateVirtualFolders(NavigatorRoot.java:116)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.lambda$0(ResourceManager.java:126)
+	at ummisco.gama.ui.utils.WorkbenchHelper.run(WorkbenchHelper.java:148)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.unblock(ResourceManager.java:122)
+	at ummisco.gama.ui.commands.RefreshHandler$3.runInWorkspace(RefreshHandler.java:187)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: com.google.common.util.concurrent.UncheckedExecutionException: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.findContentTypeFor(String)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2051)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3951)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4848)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.wrap(ResourceManager.java:734)
+	at ummisco.gama.ui.navigator.contents.WrappedContainer.lambda$1(WrappedContainer.java:60)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at one.util.streamex.StreamEx.toArray(StreamEx.java:840)
+	at ummisco.gama.ui.navigator.contents.WrappedContainer.initializeChildren(WrappedContainer.java:61)
+	at ummisco.gama.ui.navigator.contents.WrappedContainer.<init>(WrappedContainer.java:43)
+	at ummisco.gama.ui.navigator.contents.WrappedProject.<init>(WrappedProject.java:46)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.privateCreateWrapping(ResourceManager.java:758)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.lambda$4(ResourceManager.java:734)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4853)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	... 25 more
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.findContentTypeFor(String)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2051)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3951)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4848)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.wrap(ResourceManager.java:734)
+	at ummisco.gama.ui.navigator.contents.WrappedContainer.lambda$1(WrappedContainer.java:60)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at one.util.streamex.StreamEx.toArray(StreamEx.java:840)
+	at ummisco.gama.ui.navigator.contents.WrappedContainer.initializeChildren(WrappedContainer.java:61)
+	at ummisco.gama.ui.navigator.contents.WrappedContainer.<init>(WrappedContainer.java:43)
+	at ummisco.gama.ui.navigator.contents.WrappedFolder.<init>(WrappedFolder.java:38)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.privateCreateWrapping(ResourceManager.java:756)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.lambda$4(ResourceManager.java:734)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4853)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	... 48 more
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.findContentTypeFor(String)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2051)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3951)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4848)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.wrap(ResourceManager.java:734)
+	at ummisco.gama.ui.navigator.contents.WrappedContainer.lambda$1(WrappedContainer.java:60)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at one.util.streamex.StreamEx.toArray(StreamEx.java:840)
+	at ummisco.gama.ui.navigator.contents.WrappedContainer.initializeChildren(WrappedContainer.java:61)
+	at ummisco.gama.ui.navigator.contents.WrappedContainer.<init>(WrappedContainer.java:43)
+	at ummisco.gama.ui.navigator.contents.WrappedFolder.<init>(WrappedFolder.java:38)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.privateCreateWrapping(ResourceManager.java:756)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.lambda$4(ResourceManager.java:734)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4853)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	... 71 more
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.findContentTypeFor(String)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at ummisco.gama.ui.metadata.FileMetaDataProvider.getContentTypeId(FileMetaDataProvider.java:632)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.privateCreateWrapping(ResourceManager.java:751)
+	at ummisco.gama.ui.navigator.contents.ResourceManager.lambda$4(ResourceManager.java:734)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4853)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	... 94 more
+
+!ENTRY org.apache.log4j 4 0 2023-02-05 14:21:03.728
+!MESSAGE org.eclipse.xtext.builder.clustering.ClusteringBuilderState  - Error loading resource from: platform:/resource/Modeling/Spatial%20Topology/Agent%20movement/models/Follow%20Weighted%20Network%20(Agents).gaml
+
+!STACK 0
+org.eclipse.xtext.builder.resourceloader.IResourceLoader$LoadOperationException: com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: IllegalStateException: The bundle has not been started!
+  at MethodBasedModule.configure(MethodBasedModule.java:76)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> SharedStateModule
+  at PreferenceStoreWhitespaceInformationProvider.storage2UriMapper(PreferenceStoreWhitespaceInformationProvider.java:41)
+      \_ for field storage2UriMapper
+  while locating PreferenceStoreWhitespaceInformationProvider
+  at AbstractDeclarativeFormatter.whitespaceInformationProvider(AbstractDeclarativeFormatter.java:37)
+      \_ for field whitespaceInformationProvider
+  while locating GamlFormatter
+  at Serializer.formatter(Serializer.java:57)
+      \_ for field formatter
+  while locating Serializer
+  at XtextResource.serializer(XtextResource.java:490)
+      \_ for field serializer
+  while locating GamlResource
+  while locating XtextResource
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AbstractDeclarativeFormatter:                 "org.eclipse.xtext.formatting.impl.AbstractDeclarativeFormatter"
+GamlFormatter:                                "msi.gama.lang.gaml.formatting.GamlFormatter"
+GamlResource:                                 "msi.gama.lang.gaml.resource.GamlResource"
+MethodBasedModule:                            "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:                       "com.google.inject.util.Modules$OverrideModule"
+PreferenceStoreWhitespaceInformationProvider: "org.eclipse.xtext.ui.editor.formatting.PreferenceStoreWhitespaceInformationProvider"
+Serializer:                                   "org.eclipse.xtext.serializer.impl.Serializer"
+SharedStateModule:                            "org.eclipse.xtext.ui.shared.SharedStateModule"
+XtextResource:                                "org.eclipse.xtext.resource.XtextResource"
+========================
+End of classname legend:
+========================
+
+	at org.eclipse.xtext.builder.resourceloader.ParallelResourceLoader$ParallelLoadOperation.next(ParallelResourceLoader.java:246)
+	at org.eclipse.xtext.builder.resourceloader.AbstractResourceLoader$CheckedLoadOperation.next(AbstractResourceLoader.java:81)
+	at org.eclipse.xtext.builder.clustering.ClusteringBuilderState.writeNewResourceDescriptions(ClusteringBuilderState.java:379)
+	at org.eclipse.xtext.builder.clustering.ClusteringBuilderState.doUpdate(ClusteringBuilderState.java:140)
+	at org.eclipse.xtext.builder.builderState.AbstractBuilderState.update(AbstractBuilderState.java:164)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:515)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.addInfosFromTaskAndBuild(XtextBuilder.java:449)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:556)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:327)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:860)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:392)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:417)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: IllegalStateException: The bundle has not been started!
+  at MethodBasedModule.configure(MethodBasedModule.java:76)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> SharedStateModule
+  at PreferenceStoreWhitespaceInformationProvider.storage2UriMapper(PreferenceStoreWhitespaceInformationProvider.java:41)
+      \_ for field storage2UriMapper
+  while locating PreferenceStoreWhitespaceInformationProvider
+  at AbstractDeclarativeFormatter.whitespaceInformationProvider(AbstractDeclarativeFormatter.java:37)
+      \_ for field whitespaceInformationProvider
+  while locating GamlFormatter
+  at Serializer.formatter(Serializer.java:57)
+      \_ for field formatter
+  while locating Serializer
+  at XtextResource.serializer(XtextResource.java:490)
+      \_ for field serializer
+  while locating GamlResource
+  while locating XtextResource
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AbstractDeclarativeFormatter:                 "org.eclipse.xtext.formatting.impl.AbstractDeclarativeFormatter"
+GamlFormatter:                                "msi.gama.lang.gaml.formatting.GamlFormatter"
+GamlResource:                                 "msi.gama.lang.gaml.resource.GamlResource"
+MethodBasedModule:                            "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:                       "com.google.inject.util.Modules$OverrideModule"
+PreferenceStoreWhitespaceInformationProvider: "org.eclipse.xtext.ui.editor.formatting.PreferenceStoreWhitespaceInformationProvider"
+Serializer:                                   "org.eclipse.xtext.serializer.impl.Serializer"
+SharedStateModule:                            "org.eclipse.xtext.ui.shared.SharedStateModule"
+XtextResource:                                "org.eclipse.xtext.resource.XtextResource"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1103)
+	at org.eclipse.xtext.resource.XtextResourceFactory.createResource(XtextResourceFactory.java:28)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.createResource(ResourceSetImpl.java:434)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandCreateResource(ResourceSetImpl.java:243)
+	at org.eclipse.xtext.resource.XtextResourceSet.getResource(XtextResourceSet.java:261)
+	at org.eclipse.xtext.resource.SynchronizedXtextResourceSet.getResource(SynchronizedXtextResourceSet.java:33)
+	at org.eclipse.xtext.builder.resourceloader.AbstractResourceLoader.loadResource(AbstractResourceLoader.java:47)
+	at org.eclipse.xtext.builder.resourceloader.ParallelResourceLoader.loadResource(ParallelResourceLoader.java:132)
+	at org.eclipse.xtext.builder.resourceloader.ParallelResourceLoader$ParallelLoadOperation$ResourceLoadJob.run(ParallelResourceLoader.java:208)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalStateException: The bundle has not been started!
+	at org.eclipse.xtext.ui.shared.Access$InternalProvider.get(Access.java:47)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleFieldInjector.inject(SingleFieldInjector.java:50)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:146)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:124)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:296)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.SingleFieldInjector.inject(SingleFieldInjector.java:50)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:146)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:124)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:296)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.SingleFieldInjector.inject(SingleFieldInjector.java:50)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:146)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:124)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:296)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.SingleFieldInjector.inject(SingleFieldInjector.java:50)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:146)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:124)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:296)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1100)
+	... 11 more
